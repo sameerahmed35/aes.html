@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffff0;
+        }
+
+        .form-container {
+            width: 700px;
+            margin: 30px auto;
+            padding: 30px;
+            border: 2px solid #000;
+            background-color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p.description {
+            text-align: center;
+            font-size: 14px;
+            margin: 10px 0 20px 0;
+        }
+
+        label {
+            display: inline-block;
+            width: 120px;
+            vertical-align: top;
+            margin-top: 8px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 200px;
+            padding: 4px;
+            margin-bottom: 8px;
+        }
+
+        .input-pair {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .checkbox-group {
+            margin: 10px 0;
+        }
+
+        .checkbox-group label {
+            display: inline-block;
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .form-row {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Registration Form</h1>
+    <p class="description">
+        Of course, all submitted information is kept in the strictest confidence.<br>
+        You always retain control of your information with D. W. Simpson & Co.<br>
+        <strong>Our services are always at no cost to you.</strong>
+    </p>
+
+    <form>
+        <div class="form-row">
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+        </div>
+
+        <div class="form-row">
+            <label for="address">Address:</label>
+            <input type="text" id="address" style="width: 300px;">
+        </div>
+
+        <div class="form-row input-pair">
+            <label for="city">City:</label>
+            <input type="text" id="city">
+            <label for="state">State/Province:</label>
+            <input type="text" id="state">
+        </div>
+
+        <div class="form-row">
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip">
+        </div>
+
+        <div class="form-row">
+            <label for="country">Country:</label>
+            <input type="text" id="country">
+        </div>
+
+        <div class="form-row input-pair">
+            <label for="phone-h">Phone: (H)</label>
+            <input type="text" id="phone-h">
+            <label for="fax">Fax:</label>
+            <input type="text" id="fax">
+        </div>
+
+        <div class="form-row">
+            <label for="phone-w">Phone: (W)</label>
+            <input type="text" id="phone-w"> <span>(if able to speak freely)</span>
+        </div>
+
+        <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+        </div>
+
+        <div class="form-row">
+            <label for="company">Company Name:</label>
+            <input type="text" id="company"> <span>(optional)</span>
+        </div>
+
+        <div class="form-row input-pair">
+            <label for="region">Desired Region:</label>
+            <select id="region">
+                <option>Other</option>
+                <option>North America</option>
+                <option>Europe</option>
+                <option>Asia</option>
+                <option>Australia</option>
+            </select>
+            <label for="region-other">Other:</label>
+            <input type="text" id="region-other">
+        </div>
+
+        <div class="form-row">
+            <label>Professional designations earned:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox"> College Student</label>
+                <label><input type="checkbox"> Actuarial Student</label>
+                <label><input type="checkbox"> ACAS</label>
+                <label><input type="checkbox"> FCAS</label>
+                <label><input type="checkbox"> ASA</label>
+                <label><input type="checkbox"> FSA</label><br>
+                <label><input type="checkbox"> EA</label>
+                <label><input type="checkbox"> CFA</label>
+                <label><input type="checkbox"> MBA</label>
+                <label><input type="checkbox"> MAAA</label>
+                <label><input type="checkbox"> FIA</label>
+                <label><input type="checkbox"> FCIA</label><br>
+                <label><input type="checkbox"> FIAA</label>
+                <label><input type="checkbox"> Financial Engineer</label>
+                <label><input type="checkbox"> M.S.</label>
+                <label><input type="checkbox"> Ph.D.</label>
+                <label><input type="checkbox"> Data Mining</label>
+                <label><input type="checkbox"> Quant</label>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <label for="other-desig">Other Designations:</label>
+            <input type="text" id="other-desig" style="width: 300px;">
+        </div>
+
+        <div class="form-row" style="text-align: center;">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
